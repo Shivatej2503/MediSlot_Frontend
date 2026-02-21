@@ -38,7 +38,7 @@ const Auth = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", formData);
+      await axios.post("https://medislot-backend-kgy1.onrender.com/api/auth/register", formData);
       toast.success("Account created successfully 🎉");
       setIsLogin(true);
     } catch (err) {
@@ -234,3 +234,4 @@ const Auth = () => {
 };
 
 export default Auth;
+
